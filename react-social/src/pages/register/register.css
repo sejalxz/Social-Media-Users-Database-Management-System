@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap");
+
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#f5f7fa, #c3cfe2);
+}
+
+.loginWrapper {
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+
+.loginLeft,
+.loginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginLogo {
+  font-size: 100px;
+  font-weight: 800;
+  color: #085467;
+  margin-bottom: 10px;
+  font-family: "Corinthia", cursive;
+}
+
+
+
+
+.loginDesc {
+  font-size: 24px;
+}
+
+.loginBox {
+  height: 3000px;
+  padding: 20px;
+  background: linear-gradient(#93a5cf, #e4efe9, #f4c0b3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-box-shadow: 8px 5px 23px 8px rgba(0, 0, 0, 0.67);
+  box-shadow: 8px 5px 23px 8px rgba(0, 0, 0, 0.67);
+  border: 1px solid #de5d82;
+}
+
+.loginBox:hover{
+  transform: scale(1.1);
+}
+
+.loginInput {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+/* input[type=text] {
+  width: 100px;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 250px;
+} */
+
+.loginButton {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background: #de5d82;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background: #a472ee;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #856fa5, 0 0 25px #856fa5, 0 0 50px #856fa5,
+    0 0 100px #856fa5;
+}
+
+.loginButton span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, #de5d82);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: 100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.loginButtonspan:nth-child(2) {
+  top: -100%;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, #de5d82);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.loginButton span:nth-child(3) {
+  right: -100%;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #de5d82);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.loginButton span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(360deg, transparent, #de5d82);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+      bottom: -100%;
+    }
+    50%,
+    100% {
+      bottom: 100%;
+    }
+  }
+
